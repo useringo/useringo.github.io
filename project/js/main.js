@@ -7,6 +7,9 @@ var hostname = ""
 
 $.get(lb+"/get-server-url", function (server_tunnel) {
 	hostname = server_tunnel;
+}).fail(function () { // if failure, assume normal server tunnel
+	console.log("Switching over to normal server tunnel.");
+	hostname = lb;
 });
 
 var project_id = "";

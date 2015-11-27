@@ -2,7 +2,7 @@
 // Edit the various variables to fit your needs.
 
 // load balancer ping URL
-var BALANCER_URL = 'http://localhost:3001';
+var BALANCER_URL = 'http://localhost:3000';
 
 // data shown in the project editor on startup
 var PROJECT_PLACEHOLDER_DATA = "// Welcome to Ringo \n\
