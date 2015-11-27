@@ -206,6 +206,17 @@
         color: #d35400!important;
       }
 
+      @media only screen and (max-width: 740px) {
+        #subtagline {
+          font-size: 14pt!important;
+        }
+
+        #tagline {
+          font-size: 18pt!important;
+        }
+      }
+
+
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -251,8 +262,8 @@
       <div class="jumbotron">
 
         <h1>RINGO</h1>
-        <h2 style="color:rgb(124, 124, 124);">Develop native iOS applications the easy way.</h2>
-        <p class="lead" style="color:rgb(124, 124, 124); font-family:'Proxima Nova';">Harness the power of Xcode from the comfort of your favorite browser.</p>
+        <h2 style="color:rgb(124, 124, 124);" id="tagline">Develop native iOS applications the easy way.</h2>
+        <p id="subtagline" class="lead" style="color:rgb(124, 124, 124); font-family:'Proxima Nova';">Harness the power of Xcode from the comfort of your favorite browser.</p>
         <a class="btn btn-large btn-inverse btn-awesome" href="/project" style="font-weight: 300;">Start Building</a>
       </div>
     </div>
