@@ -2,7 +2,7 @@
 // Edit the various variables to fit your needs.
 
 // load balancer ping URL
-var BALANCER_URL = 'http://gautam.cc:3001';
+var BALANCER_URL = 'http://localhost:3001';
 
 // data shown in the project editor on startup
 var PROJECT_PLACEHOLDER_DATA = "// Welcome to Ringo \n\
@@ -46,7 +46,7 @@ var SANDBOX_PLACEHOLDER_DATA = '// Sandbox (noun): a virtual space in which new 
 // Swift reference: http://apple.co/1M0bjSG\n\
 \n\
 \n\
-println("Hello, world");\n\
+print("Hello, world");\n\
 // This is where you write code\n\
 // Just start coding, and Ringo will automatically build your and test your code\n\
 // The output will be displayed in the right pane';

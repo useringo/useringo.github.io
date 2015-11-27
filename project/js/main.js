@@ -106,20 +106,10 @@ function loadFiles() {
 				console.log(err);
 			},
 			success: function (data) {
-				// console.log(data);
-				data = JSON.parse("[" + data + "]");
+				var parsedData = JSON.parse(data);
+				parsedData.splice(parsedData.length-1, 1);
 
-				// for some reason, the server returns more files than necessary, so we need to chop off that extra stuff
-				while (data.length > data[data.length - 1].count + 1) {
-					data.shift();
-				}
-
-				// delete the last object in the array, as that is a helper object which is no longer necessary
-				data.splice(data.length-1, 1);
-
-				console.log(data);
-
-				files = data;
+				files = parsedData;
 
 				// get the .xcassets files
 				$.ajax({
